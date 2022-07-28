@@ -1,0 +1,266 @@
+/*your CSS code here*/
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    background: aliceblue;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+   
+    
+}
+
+.container .left 
+{
+    position:relative;
+    background: #003147; 
+    padding: 40px;
+   
+}
+
+.container .right 
+{
+    position:relative;
+    background-color:#fff;
+    padding: 40px;
+}
+
+.image img
+{
+    
+    border-radius:50%;
+    width: 250px;
+    
+}
+
+.name
+{
+    color: aliceblue;
+    text-align: center;
+}
+.name span
+{
+   font-size: 0.8em;
+   font-weight: 300;
+
+}
+
+.protext
+{
+    border-bottom: 1px solid lightblue;
+}
+
+.contact-info
+{
+    padding-top: 40px;
+    text-align: left;
+}
+
+.title
+{
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info ul
+{
+    position: relative;
+}
+
+.contact-info ul li
+{
+    list-style: none;
+    margin:10px 0 ;
+    
+    
+}
+
+.contact-info span
+{
+    color:aliceblue;
+}
+
+.contact-info ul li a
+{
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+    
+}
+
+.contact-info ul li .icon
+{
+    display: inline-block;
+    width:30px;
+    font-size:18px;
+    color:#03a9f4;
+}
+
+.education-info ul li
+{
+    list-style:square;
+    color: aliceblue;
+}
+
+.education-info ul li h5
+{
+    color:#03a9f4 ;
+}
+
+.Language-info ul li
+{
+    list-style: none;
+    color: aliceblue;
+    padding-bottom:10px ;
+   
+}
+
+.Language-info .percentage
+
+{
+    position: relative;
+    width:100%;
+    height: 6px;
+    background-color: lavender;
+    display: block;
+}
+
+
+
+
+
+.about .title1
+{
+   text-transform: uppercase; 
+   color:#003147;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about ul{
+    letter-spacing: 1px;
+    padding:1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.about .box
+{
+    display:flex;
+    flex-direction: row;
+    margin: 10px 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.about .box .year_company
+{
+     min-width: 150px;
+}
+
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color:grey;
+}
+
+
+
+.about_skills .title1
+{
+    text-transform: uppercase; 
+   color:#003147;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about_skills h4
+{
+    color:#003147;
+    text-transform:uppercase;
+}
+
+.about_skills  .box
+{
+    position:relative;
+    width:100%;
+    display:grid;
+    align-items: center;
+    grid-template-columns: 30fr 30fr;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_skills .percentage
+{
+    position: relative;
+    width:100%;
+    height: 10px;
+    background-color: rgb(158, 149, 149);
+    display: block;
+    
+}
+
+.about_skills .percentage div
+{
+   position: absolute;
+   top:0;
+   left: 0;
+   height: 100%;
+   background-color:#003147;
+}
+
+.Interests ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+/*you tube*/
+@media (max-width:1000px)
+{
+    .container
+    {
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Interests ul
+    {
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+   
+    .Interests ul
+    {
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
